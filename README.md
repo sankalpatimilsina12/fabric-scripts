@@ -1,1 +1,1 @@
-# fabric-scripts
+# Fabric Example Scripts
