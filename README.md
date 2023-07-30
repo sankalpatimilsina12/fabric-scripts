@@ -39,8 +39,8 @@ They are suppose to provide basic usage information.
         }' | ndndpdk-ctrl --gqlserver http://127.0.0.1:3030 create-face | tee /dev/stderr | jq -r .id)
 
         ndndpdk-ctrl --gqlserver http://127.0.0.1:3030 insert-fib \
-        ```
         --name /<fileserver_prefix> --nh $FACEID
+        ```
         The `<remote_ip>` and `<remote_port>` should be replaced with the IP address and port of the fileserver node where the NDN-DPDK forwarder is running. The `<fileserver_prefix>` should be replaced with the prefix of the fileserver node.
     - Make the file executable: `chmod +x face_fib.sh`
     - Run the script: `./face_fib.sh`. This will create a UDP face and register a fib entry towards the fileserver node.
